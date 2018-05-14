@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workFlowConfig id="demo-template" desc="demo流程定义">
+
+    <propeties>
+        <key>扩展使用</key>
+    </propeties>
+
+    <process-list>
+        <process id="PRO-NULL-AC" sourceStatus="NULL" destStatus="AC" router="acceptSuccessRouter" desc="请求受理流程">
+            <action-list>
+                <action seq="1" ref="requestAcceptAction" desc="请求受理"/>
+                <action seq="3" ref="saveTransactionAction" desc="交易落地"/>
+            </action-list>
+        </process>
+
+        <process id="PRO-AC-PR" sourceStatus="AC" destStatus="PR" router="prSuccessRouter" failrouter="prFailRouter" desc="处理流程">
+            <action-list>
+                <action seq="1" ref="processAction1" desc="处理action1"/>
+                <action seq="2" ref="processAction2" isInTrans="true" desc="处理action2"/>
+            </action-list>
+        </process>
+
+        <process id="PRO-PR-SU" sourceStatus="PR" destStatus="SU" desc="成功">
+            <action-list>
+                <action seq="1" ref="suAction1" desc="成功action1"/>
+                <action seq="2" ref="suAction2" desc="成功Action2"/>
+            </action-list>
+        </process>
+
+        <process id="PRO-PR-FA" sourceStatus="PR" destStatus="FA" desc="失败">
+            <action-list>
+                <action seq="1" ref="faAction1" desc="失败action1"/>
+                <action seq="2" ref="faAction2" desc="失败Action2"/>
+            </action-list>
+        </process>
+
+    </process-list>
+</workFlowConfig>
