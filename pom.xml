@@ -103,19 +103,4 @@
         </plugins>
     </build>
 
-    <distributionManagement>
-        <repository>
-            <id>qf-public-repo</id>
-            <name>qf-public</name>
-            <url>http://nexus-dev.quarkfinance.com:8081/repository/maven-public/</url>
-        </repository>
-
-        <snapshotRepository>
-            <id>qf-snapshots-repo</id>
-            <name>qf-snapshots</name>
-            <url>http://nexus-dev.quarkfinance.com:8081/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-
-
 </project>
