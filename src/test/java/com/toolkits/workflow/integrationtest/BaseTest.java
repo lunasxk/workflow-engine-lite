@@ -19,7 +19,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration({"classpath:META-INF/spring/application-context.xml",
-                        "classpath:META-INF/workflow-context.xml"})
+        "classpath:config/spring/workflow-context.xml"})
 public abstract class BaseTest implements ApplicationContextAware {
     /**
      * applicationContext
