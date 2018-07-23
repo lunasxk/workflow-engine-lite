@@ -32,7 +32,7 @@
 应用需要配置如下三个logger：
 >* WORKFLOW-CORE     : 流程引擎核心日志
 >* WORKFLOW-PROFILER : 流程引擎性能日志
->* WORKFLOW-CACGE    : 流程引擎缓存日志
+>* WORKFLOW-CACHE    : 流程引擎缓存日志
 
 
 ## 3. 流程设计 && 编码实现

@@ -33,7 +33,7 @@ import com.toolkits.workflow.util.StringUtil;
 public class WorkFlowCacheManager implements InitializingBean {
 
     /** logger */
-    private static final Logger         logger    = LoggerFactory.getLogger("WORKFLOW-CACGE");
+    private static final Logger         logger    = LoggerFactory.getLogger("WORKFLOW-CACHE");
 
     /** 流程引擎配置获取器 */
     @Resource(name = "workFlowTemplateFetcher")
